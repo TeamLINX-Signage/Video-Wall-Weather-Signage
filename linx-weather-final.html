@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LINX Weather Report</title>
+    <style>
+        body {
+            margin: 0;
+            background: url('blank background.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .location {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .forecast {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .day {
+            margin: 0 30px;
+        }
+
+        .icon {
+            width: 100px;
+            height: auto;
+        }
+
+        .temp {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">YOUR LINX WEATHER REPORT</div>
+        <div class="location">DENVER, CO</div>
+        <div class="forecast">
+            <div class="day">
+                <img class="icon" src="whiteicon.png" alt="Weather Icon">
+                <div class="temp">78</div>
+            </div>
+            <div class="day">
+                <img class="icon" src="whiteicon.png" alt="Weather Icon">
+                <div class="temp">78</div>
+            </div>
+            <div class="day">
+                <img class="icon" src="whiteicon.png" alt="Weather Icon">
+                <div class="temp">78</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
