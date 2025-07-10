@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LINX Weather Overlay</title>
+    <style>
+        body {
+            margin: 0;
+            background: url('Background.png') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .weather-widget {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-widget">
+        <iframe 
+            src="https://www.meteoblue.com/en/weather/widget/daily/denver_united-states_5419384?geoloc=fixed&days=4&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&layout=image" 
+            frameborder="0" 
+            scrolling="no" 
+            width="650" 
+            height="250">
+        </iframe>
+    </div>
+</body>
+</html>
