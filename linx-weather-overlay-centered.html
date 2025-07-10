@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LINX Experience Center Weather</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: url('Live Video Wall.png') no-repeat center center fixed;
+      background-size: cover;
+      overflow: hidden;
+    }
+    .weather {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1000px;
+      height: 250px;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="weather">
+    <iframe 
+      src="https://www.meteoblue.com/en/weather/widget/three/denver_united-states_5419384?geoloc=fixed&days=3&tempunit=FAHRENHEIT"
+      frameborder="0"
+      scrolling="no"
+      allowtransparency="true"
+      sandbox="allow-same-origin allow-scripts">
+    </iframe>
+  </div>
+</body>
+</html>
