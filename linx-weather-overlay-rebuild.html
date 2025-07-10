@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LINX Weather Display</title>
+  <style>
+    body {
+      margin: 0;
+      background-image: url('Background.png');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+    }
+    .weather-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      height: 100vh;
+    }
+    .weather-box {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 10px;
+      width: 180px;
+    }
+    .weather-icon {
+      width: 80px;
+      height: 80px;
+      margin: 10px auto;
+    }
+    .city {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .day {
+      font-size: 1.2rem;
+      margin: 5px 0;
+    }
+    .temp {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="weather-container">
+    <div class="weather-box">
+      <div class="city">Denver, CO</div>
+      <img src="icon-cloud.png" alt="Weather Icon" class="weather-icon" />
+      <div class="day">Thu</div>
+      <div class="temp">86°F</div>
+    </div>
+    <div class="weather-box">
+      <div class="city">&nbsp;</div>
+      <img src="icon-cloud.png" alt="Weather Icon" class="weather-icon" />
+      <div class="day">Fri</div>
+      <div class="temp">84°F</div>
+    </div>
+    <div class="weather-box">
+      <div class="city">&nbsp;</div>
+      <img src="icon-cloud.png" alt="Weather Icon" class="weather-icon" />
+      <div class="day">Sat</div>
+      <div class="temp">82°F</div>
+    </div>
+    <div class="weather-box">
+      <div class="city">&nbsp;</div>
+      <img src="icon-cloud.png" alt="Weather Icon" class="weather-icon" />
+      <div class="day">Sun</div>
+      <div class="temp">87°F</div>
+    </div>
+  </div>
+</body>
+</html>
